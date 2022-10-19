@@ -10,9 +10,14 @@
      background-color: aqua;
      animation: infinite;
 }
-.menu
+.menu .menu.items
 {
      background-color: azure;
      touch-action: pan-y;
      border:0px;
+}
+
+.tab
+{
+     background:pink;
 }
