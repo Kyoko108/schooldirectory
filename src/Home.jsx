@@ -59,7 +59,7 @@ export default function Home() {
       )}
       </Menu></Tab>
 
-&nbsp;
+&nbsp;<Tab>
        <Menu>
           {({ open }) => (
         <>
@@ -93,12 +93,14 @@ export default function Home() {
   </>
       )}
       </Menu>
+      </Tab>
       
-
+<Tab>
       <DayNightToggle
       onChange={() => setIsDarkMode(!isDarkMode)}
       checked={isDarkMode}
     />
+    </Tab>
 
    </Tab.Group>
     </>

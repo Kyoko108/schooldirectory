@@ -5,7 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-Marquee
+.marquee
 {
      background-color: aqua;
+     animation: infinite;
+}
+.menu
+{
+     background-color: azure;
+     touch-action: pan-y;
+     border:0px;
 }
