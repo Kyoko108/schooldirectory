@@ -50,12 +50,12 @@ export default function Home() {
     h-screen
     bg-gradient-to-tr
     from-pink-500
-    via-red-500
+    via-red-400
     to-blue-500
     background-animate
   "
 >
-      <Marquee className="relative  bg-gradient-to-bl  from-pink-500
+      <Marquee className="relative  bg-gradient-to-bl  from-blue-500
     via-red-500
     to-blue-500
     background-animate text-black" onMouseOver="this.stop()" onMouseOut="this.start()" >
