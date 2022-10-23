@@ -5,19 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.marquee
-{
-     background-color: aqua;
-     animation: infinite;
-}
-.menu .menu.items
-{
-     background-color: azure;
-     touch-action: pan-y;
-     border:0px;
-}
 
-.tab
-{
-     background:pink;
-}
+
+

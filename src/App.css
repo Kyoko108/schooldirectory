@@ -51,10 +51,28 @@ html {
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 3s ease-in-out infinite radial;
+    -moz-animation: AnimationName 3s ease-in-out infinite radial;
+    animation: AnimationName 3s ease-in-out infinite radial;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  
   /* 2 */
 }
 
@@ -238,7 +256,7 @@ Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/
 */
 
 :-moz-ui-invalid {
-  box-shadow: none;
+  box-shadow: 10px;
 }
 
 /*
@@ -840,6 +858,8 @@ video {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+
 
 @media (min-width: 768px){
   .md\:mt-1{
