@@ -48,14 +48,17 @@ export default function Home() {
   class="
     w-screen
     h-screen
-    bg-gradient-to-bl
+    bg-gradient-to-tr
     from-pink-500
     via-red-500
     to-blue-500
     background-animate
   "
 >
-      <Marquee className="relative animate__animated bg-black text-slate-50" onMouseOver="this.stop()" onMouseOut="this.start()" >
+      <Marquee className="relative  bg-gradient-to-bl  from-pink-500
+    via-red-500
+    to-blue-500
+    background-animate text-black" onMouseOver="this.stop()" onMouseOut="this.start()" >
         ADMISSION NOTICE FOR KINDERGARTEN(KG) AND CLASS 1 FOR 2023-24, PLEASE CHECK ADMISSION SECTION****** ISC-2022-ISSUE OF DOCUMENTS, KINDLY CHECK WEBSITE NOTICE BOARD****FEES CAN BE PAID ON ANY DAY BETWEEN 5TH AND 20TH OF EVERY MONTH.
         </Marquee>
        
