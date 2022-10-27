@@ -11,12 +11,12 @@ module.exports = {
         Hero: "url('assets/Hero.png')",
       },
       animation: {
-      marquee: 'marquee 25s linear infinite',
+      marquee: 'marquee 25s radial infinite',
     },
        keyframes: {
       marquee: {
         '0%': { transform: 'translateX(-10%)' },
-        '100%': { transform: 'translateX(100%)' },
+        '100%': { transform: 'translateY(100%)' },
       }
     },
     },

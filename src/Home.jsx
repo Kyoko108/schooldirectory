@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React  from "react";
-import { Menu,Transition,Tab } from '@headlessui/react';
-import { Fragment } from 'react';
+import { Menu,Transition,Tab } from "@headlessui/react";
+import { Fragment } from "react";
 import Marquee from "react-fast-marquee";
 
 
@@ -45,21 +45,13 @@ export default function Home() {
       
       <>
     <div
-  class="
-    w-screen
-    h-screen
-    bg-gradient-to-tr
-    from-pink-500
-    via-red-400
-    to-blue-500
-    background-animate
-  "
+  
 >
-      <Marquee className="relative  bg-gradient-to-bl  from-blue-500
+      <Marquee className="relative  bg-gradient-to-bl  from-yellow-500
     via-red-500
     to-blue-500
     background-animate text-black" onMouseOver="this.stop()" onMouseOut="this.start()" >
-        ADMISSION NOTICE FOR KINDERGARTEN(KG) AND CLASS 1 FOR 2023-24, PLEASE CHECK ADMISSION SECTION****** ISC-2022-ISSUE OF DOCUMENTS, KINDLY CHECK WEBSITE NOTICE BOARD****FEES CAN BE PAID ON ANY DAY BETWEEN 5TH AND 20TH OF EVERY MONTH.
+        ADMISSION NOTICE FOR KINDERGARTEN(KG) AND CLASS 1 FOR 2026-24, PLEASE CHECK ADMISSION SECTION****** ISC-2022-ISSUE OF DOCUMENTS, KINDLY CHECK WEBSITE NOTICE BOARD****FEES CAN BE PAID ON ANY DAY BETWEEN 5TH AND 20TH OF EVERY MONTH.
         </Marquee>
        
 
@@ -68,28 +60,27 @@ export default function Home() {
       <br/>
       <br/>
       
-      
+      &nbsp;
       <Tab.Group >
-        <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 bg-yellow-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+        <Tab.List className="absolute flex space-x-0.5 rounded-xl bg-blue-900/20 p-1 bg-gradient-to-tr
+    from-pink-500
+    via-red-400
+    to-blue-500
+    background-animate shadow-lg">
+        <Tab className="margin-3 px-4 py-2 text-md font-medium leading-5 text-gray-700 bg-yellow-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
         Home</Tab>
-       <Tab >
+      
+        <div className = "flex items-center justify-center p-6">
+          <div className="relative inline-block text-left">
        <Menu >
           {({ open }) => (
         <>
-      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 animate-pulse">
-                  <span>About Us</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+      <span className="rounded-md shadow-sm">
+      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+                  <span>AboutUs</span>
+                  
                 </Menu.Button>
+                </span>
       <Transition
        show={open}
         enter="transition duration-100 ease-out"
@@ -121,26 +112,19 @@ export default function Home() {
   </>
       )}
       </Menu>
-      </Tab>
-
-<Tab >
+      </div>
+      </div>
+  <div className = "flex items-center justify-center p-9">
+    <div className="relative inline-block text-left">
        <Menu>
           {({ open }) => (
         <>
-      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+      <span className="rounded-md shadow-sm">
+      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
                   <span>School</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  
                 </Menu.Button>
+                </span>
       <Transition
        show={open}
         enter="transition duration-500 ease-out"
@@ -172,26 +156,21 @@ export default function Home() {
   </>
       )}
       </Menu>
-      </Tab>
+      </div>
+      </div>
       
-<Tab >
+
+  <div className = "flex items-center justify-center p-9">
+    <div className="relative inline-block text-left">
        <Menu >
           {({ open }) => (
         <>
-      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+         <span className="rounded-md shadow-sm">
+      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
                   <span>Staff</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  
                 </Menu.Button>
+                </span>
       <Transition
        show={open}
         enter="transition duration-5000 ease-out"
@@ -223,26 +202,22 @@ export default function Home() {
   </>
       )}
       </Menu>
-      </Tab>
+      </div>
+      </div>
 
-      <Tab >
+
+      
+        <div className = "flex items-center justify-center p-9">
+          <div className="relative inline-block text-left">
        <Menu >
           {({ open }) => (
         <>
-      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+        <span className="rounded-md shadow-sm">
+      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
                   <span>NoticeBoard</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  
                 </Menu.Button>
+                </span>
       <Transition
        show={open}
         enter="transition duration-500 ease-out"
@@ -252,7 +227,7 @@ export default function Home() {
         leaveFrom="transform scale-500 opacity-100"
         leaveTo="transform scale-595 opacity-0"
       ></Transition>
-      <Menu.Items  className=" right-100 w-50 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+      <Menu.Items className=" right-100 w-50 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
         {noticeboard.map((link) => (
           /* Use the `active` state to conditionally style the active item. */
           <Menu.Item key={link.href} as={Fragment}>
@@ -274,31 +249,25 @@ export default function Home() {
   </>
       )}
       </Menu>
-      </Tab>
-      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+      </div>
+      </div>
+      
+      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
         Admission</Tab>
 
-      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
         Fees Payment
       </Tab>
-
-      <Tab >
+&nbsp;&nbsp;&nbsp;
+    
+        <div className = "flex items-center justify-center p-9">
+          <div className="relative inline-block text-left">
        <Menu >
           {({ open }) => (
         <>
-      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+      <Menu.Button className="inline-flex  w-full px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out  hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
                   <span>Gallery</span>
-                  <svg
-                    className="w-5 h-5 ml-2 -mr-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  
                 </Menu.Button>
       <Transition
        show={open}
@@ -309,10 +278,10 @@ export default function Home() {
         leaveFrom="transform scale-500 opacity-100"
         leaveTo="transform scale-595 opacity-0"
       ></Transition>
-      <Menu.Items  className=" right-100 w-50 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
+      <Menu.Items   className=" right-100 w-50 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none">
         {gallery.map((link) => (
           /* Use the `active` state to conditionally style the active item. */
-          <Menu.Item key={link.href} as={Fragment}>
+          <Menu.Item  key={link.href} as={Fragment}>
             {({ active }) => (
               <a
                           href={link.href}
@@ -331,11 +300,12 @@ export default function Home() {
   </>
       )}
       </Menu>
-      </Tab>
-
-      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800">
+      </div>
+    </div>
+    
+      <Tab className=" px-4 py-2 text-md font-medium leading-5 text-gray-700 transition duration-450 ease-in-out   hover:text-gray-500 focus:outline-none focus:border-blue-600 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 margin-3">
       Contact</Tab>
-
+</Tab.List>
    </Tab.Group>
  </div>
     </>

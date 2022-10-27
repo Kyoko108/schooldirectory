@@ -58,14 +58,30 @@ html {
     -moz-animation: AnimationName 3s ease-in-out infinite radial;
     animation: AnimationName 3s ease-in-out infinite radial;
   }
+.background-animatex {
+    background-size: 500%;
 
-  @keyframes AnimationName {
+    -webkit-animation: AnimationNamey 500s ease-out infinite radial;
+    -moz-animation: AnimationNamey 500s ease-out infinite radial;
+    animation: AnimationNamey 500s ease-out infinite radial;
+  } 
+@keyframes AnimationName {
     0%,
     100% {
-      background-position: 0% 50%;
+      background-position:  25%   75% ;
     }
     50% {
-      background-position: 100% 50%;
+      background-position: 100%  50% ;
+    }
+  }
+
+  @keyframes AnimationNamey {
+    0%,
+    100% {
+      background-position: 0% 25% 50%  75% 100%;
+    }
+    50% {
+      background-position: 100% 75% 50% 25% 0%;
     }
   }
 body {
@@ -720,6 +736,7 @@ video {
 .bg-cover{
   background-size: cover;
   background-color: violet;
+  background-repeat: var(--tw-translate-x);
 }
 
 .bg-center{
@@ -841,7 +858,7 @@ video {
 }
 
 .duration-500{
-  transition-duration: 500ms;
+  transition-duration: 10000ms;
 }
 
 .hover\:text-primary:hover{

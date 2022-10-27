@@ -26,7 +26,7 @@ function Signup() {
         <br/>
         <br/>
         <span>Type of account: </span>
-        <input type='radio' name='account' id='User' value='User' checked/>
+        <input type='radio' name='account' id='User' value='User' />
         <label htmlFor='User'><span> User  </span></label>
         <input type='radio' name='account' id='Admin' value='Admin'/>
         <label htmlFor='Admin'><span> Admin  </span></label>
