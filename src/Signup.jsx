@@ -1,11 +1,26 @@
 
 //import {FaToggleOn } from 'react-icons/fa';
 //import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
-import React from 'react'
+import React ,{useState} from 'react'
 import { Link } from 'react-router-dom';
+import { useForm } from "react-hook-form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+const eye = <FontAwesomeIcon icon={faEye} />;
 
 
 function Signup() {
+const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
+
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => {
+    console.log(data);
+  };
+
+
   return (
     <div className='container  mt-sm-4'>
         <center>
@@ -22,7 +37,9 @@ function Signup() {
             right : 20 ,
           }} />
          </View> */}
-        <input type='password' placeholder='Enter Password...'/>
+        <input  placeholder='Enter Password...'type={passwordShown ? "text" : "password"}
+        {... register('Password',{ required: "This is required." })} />
+         <i onClick={togglePasswordVisiblity}>{eye}</i>{" "}
         <br/>
         <br/>
         <span>Type of account: </span>
@@ -32,7 +49,9 @@ function Signup() {
         <label htmlFor='Admin'><span> Admin  </span></label>
         <br/>
         <br/>
-        <button type='submit'>Signup</button>
+        <button type="submit" onClick={handleSubmit(onSubmit)}>
+        Signup
+      </button>
         <br/>
         <span>Already have an account? </span> 
           <Link to='/'>LogIn</Link>
